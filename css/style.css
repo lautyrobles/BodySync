@@ -1,9 +1,10 @@
-/* Error: expected "{".
+/* Error: Expected newline.
  *   ,
- * 2 | @import './components/login.sass';
- *   |                                  ^
+ * 2 | .card {
+ *   |       ^
  *   '
- *   scss\style.scss 2:34  root stylesheet */
+ *   scss\components\login.sass 2:7  @import
+ *   scss\style.scss 1:9             root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: expected \"{\".\a   \2577 \a 2 \2502  @import './components/login.sass';\d\a   \2502                                   ^\a   \2575 \a   scss\\style.scss 2:34  root stylesheet";
+  content: "Error: Expected newline.\a   \2577 \a 2 \2502  .card {\d\a   \2502        ^\a   \2575 \a   scss\\components\\login.sass 2:7  @import\a   scss\\style.scss 1:9             root stylesheet";
 }
