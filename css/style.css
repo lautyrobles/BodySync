@@ -77,4 +77,11 @@
   color: #ffeba7;
 }
 
+body {
+  background-color: white;
+}
+body header {
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
